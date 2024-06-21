@@ -1,0 +1,69 @@
+/* styles/Animation.module.css
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .text {
+    animation: fadeIn 3s infinite;
+  }
+   */
+
+  /* styles/Hover.module.css */
+.text {
+    transition: color 0.3s ease;
+  }
+  
+  .text:hover {
+    color: blue;
+    cursor: pointer;
+  }
+  
+/* styles/Shadow.module.css */
+.shadow {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .blur {
+    color: transparent;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  
+
+
+  /* styles/Path.module.css */
+@keyframes text-move {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+  
+  .text-path {
+    animation: text-move 10s infinite linear;
+  }
+  
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .slidingText {
+    animation: slideDown 2s ease-out;
+  }
+  
+
+  

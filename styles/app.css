@@ -1,0 +1,106 @@
+.facebook {
+     width: 100%;
+
+}
+
+.d-block {
+    width: 33%;
+}
+
+.carousel-item {
+    display: flex;
+}
+
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  img.bounce {
+    animation: bounce 3s infinite;
+  }
+
+  .bounce {
+    border-radius: 100px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: +100;
+}
+
+.cut {
+    background: url('linecut.gif');
+    height: 4px;
+}
+
+
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.logoSection img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.logoSection p {
+  font-size: 0.75rem;
+}
+
+.linksSection h4, .socialSection h4 {
+  margin-bottom: 10px;
+}
+
+.linksSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.linksSection ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.linksSection ul li a:hover {
+  color: #f39c12;
+}
+
+.socialSection div a img {
+  width: 24px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.socialSection div a:hover img {
+  transform: scale(1.1);
+}
+
+
+.img {
+  width: 90%;
+  height: auto;
+}
+
+.himg {
+  width: 100%;
+  height: auto;
+}
