@@ -15,9 +15,12 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
       // If credentials are incorrect, send an unauthorized response
       res.status(401).json({ message: 'Invalid credentials' });
     }
+  } else if (req.method === 'GET') {
+    // Handle GET request
+    res.status(405).json({ message: 'GET method is not allowed for this endpoint' });
   } else {
-    // If the method is not POST, return method not allowed
+    // If the method is not POST or GET, return method not allowed
     res.setHeader('Allow', ['POST']);
-    res.status(405).end(`Method ${req.method} Not Allowed`);
+    res.status(405).json({ message: `Method ${req.method} Not Allowed` });
   }
 }
